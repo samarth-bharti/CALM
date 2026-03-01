@@ -1122,3 +1122,477 @@ p {
   background: rgba(76, 201, 240, 0.3);
   color: #fff;
 }
+
+/* ================== NEW SCREENS STYLES ================== */
+
+/* Error Messages */
+.error-message {
+  background: rgba(255, 87, 87, 0.2);
+  border: 1px solid rgba(255, 87, 87, 0.4);
+  color: #ff5757;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.error-text {
+  display: block;
+  color: #ff5757;
+  font-size: 0.75rem;
+  margin-top: 4px;
+}
+
+/* Form Inputs */
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  width: 100%;
+  padding: 12px 16px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus {
+  outline: none;
+  border-color: #4cc9f0;
+}
+
+/* Classification Result */
+.classification-result {
+  text-align: center;
+  padding: 32px;
+  background: linear-gradient(135deg, #1a1a1a, #141414);
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 16px 48px;
+  background: linear-gradient(135deg, #4cc9f0, #3aa8d8);
+  color: #0f0f0f;
+  border-radius: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.confidence-display {
+  font-size: 1rem;
+  color: #888;
+}
+
+.role-scores {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.score-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.score-item > span:first-child {
+  min-width: 150px;
+  font-size: 0.9rem;
+  color: #d0d0d0;
+}
+
+.score-bar {
+  flex: 1;
+  height: 8px;
+  background: #333;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.score-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4cc9f0, #3aa8d8);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.score-item > span:last-child {
+  min-width: 50px;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #4cc9f0;
+  font-weight: 600;
+}
+
+/* Question Card */
+.question-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 32px;
+  margin-top: 24px;
+}
+
+.question-card h3 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.option-button {
+  padding: 16px 24px;
+  background: #141414;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #d0d0d0;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.option-button:hover {
+  border-color: #4cc9f0;
+  background: rgba(76, 201, 240, 0.1);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Hardware Info */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #141414;
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
+}
+
+.info-label {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.info-value {
+  color: #4cc9f0;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Mouse Test Area */
+.mouse-test-area {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 12px;
+  margin: 24px 0;
+  cursor: crosshair;
+}
+
+.target-circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(76, 201, 240, 0.2);
+  border: 3px solid #4cc9f0;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.target-center {
+  width: 10px;
+  height: 10px;
+  background: #4cc9f0;
+  border-radius: 50%;
+}
+
+/* Reaction Test */
+.reaction-test-area {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 12px;
+  margin: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.reaction-message {
+  font-size: 2rem;
+  color: #888;
+  font-weight: 600;
+}
+
+.reaction-target {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(135deg, #4cc9f0, #3aa8d8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0f0f0f;
+  animation: appear 0.2s ease-out;
+}
+
+@keyframes appear {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Drag-Drop Test */
+.drag-drop-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin: 24px 0;
+}
+
+.draggable-items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.draggable-item {
+  padding: 16px 24px;
+  background: linear-gradient(135deg, #4cc9f0, #3aa8d8);
+  color: #0f0f0f;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: move;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.draggable-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(76, 201, 240, 0.3);
+}
+
+.drop-zone {
+  flex: 1;
+  min-height: 300px;
+  background: #1a1a1a;
+  border: 3px dashed #333;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.drop-zone:hover {
+  border-color: #4cc9f0;
+  background: rgba(76, 201, 240, 0.05);
+}
+
+.drop-count {
+  font-size: 1.5rem;
+  color: #4cc9f0;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* Test Content */
+.test-content {
+  margin-top: 24px;
+}
+
+.test-description {
+  color: #b0b0b0;
+  margin-bottom: 16px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.code-snippet {
+  background: #0a0a0a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+}
+
+.code-snippet pre {
+  margin: 0;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #b0b0b0;
+}
+
+/* Test Instructions */
+.test-instructions {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px 0;
+}
+
+.test-instructions p {
+  text-align: left;
+  color: #d0d0d0;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.test-instructions p:last-child {
+  margin-bottom: 0;
+}
+
+/* Thank You Screen */
+.thank-you-content {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 32px;
+  margin: 24px 0;
+  text-align: center;
+}
+
+.thank-you-content p {
+  color: #4cc9f0;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.thank-you-message {
+  background: rgba(76, 201, 240, 0.1);
+  border: 1px solid rgba(76, 201, 240, 0.3);
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 24px;
+}
+
+.thank-you-message p {
+  color: #d0d0d0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Progress Indicator (Top of screen) */
+.progress-indicator {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: rgba(26, 26, 26, 0.95);
+  padding: 12px 24px;
+  border-radius: 24px;
+  border: 1px solid #2a2a2a;
+  backdrop-filter: blur(10px);
+}
+
+.progress-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.progress-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #333;
+  transition: all 0.3s ease;
+}
+
+.progress-dot.active {
+  background: #4cc9f0;
+  box-shadow: 0 0 10px rgba(76, 201, 240, 0.5);
+  transform: scale(1.3);
+}
+
+.progress-dot.completed {
+  background: #4cc9f0;
+}
+
+/* Responsive adjustments for new screens */
+@media (max-width: 768px) {
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .drag-drop-container {
+    flex-direction: column;
+  }
+
+  .mouse-test-area {
+    height: 400px;
+  }
+
+  .reaction-test-area {
+    height: 300px;
+  }
+
+  .progress-indicator {
+    top: 10px;
+    padding: 8px 16px;
+  }
+
+  .progress-dot {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .role-badge {
+    padding: 12px 32px;
+    font-size: 1.2rem;
+  }
+
+  .reaction-target {
+    width: 120px;
+    height: 120px;
+    font-size: 1.2rem;
+  }
+
+  .mouse-test-area {
+    height: 350px;
+  }
+}
